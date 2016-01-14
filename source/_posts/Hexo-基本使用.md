@@ -3,7 +3,7 @@ date: 2016-01-11 21:52:07
 tags: Hexo
 ---
 
-## Hexo 安装步骤
+### Hexo 安装步骤
 
 1. 安装`node.js`
 2. 全局安装 hexo `npm install -g hexo-cli`
@@ -23,9 +23,16 @@ tags: Hexo
 	- `data : 2015-12-13 19:05:28`
 	- `tags : 标签`
 	- `updata: 最后修改时间`
-	- `comments: `定义能否评论此博文（true）
-	- `categories: 博文种类`
-	- `<!-- more -->` 使博文在 more 位置折叠
+	- `comments: `定义能否评论此文章（true）
+	- `categories: 文章分类`
+	- `<!-- more -->` 使文章在 more 位置折叠
+	- `多级分类`
+	```
+	categories:
+    - Sports
+    - Baseball
+	```
+
 
 12. 配置文件——“_config.yml”
 13. 主题在 themes 目录
@@ -41,16 +48,16 @@ tags: Hexo
 
 ---
 
-## 常用命令
+### 常用命令
 
-### 简写
+#### 简写
 
 `hexo n "我的博客"` == `hexo new "我的博客"` #新建文章
 `hexo g` == `hexo generate` #生成
 `hexo s` == `hexo server` #启动服务预览
 `hexo d` == `hexo deploy` #部署
 
-### 服务器
+#### 服务器
 `hexo server` #Hexo 会监视文件变动并自动更新，您无须重启服务器。
 `hexo server -s` #静态模式
 `hexo server -p 5000` #更改端口
@@ -60,11 +67,11 @@ tags: Hexo
 `hexo g` #生成静态页面
 `hexo d` #部署 （要先在 _Config.yml 配置文件配置 deploy 项）
 
-### 监视文件变动
+#### 监视文件变动
 >`hexo generate` #使用 Hexo 生成静态文件快速而且简单
 >`hexo generate --watch` #监视文件变动
 
-### 完成后部署
+#### 完成后部署
 两个命令作用是一样的
 `hexo generate --deploy`
 `hexo deploy --generate`
@@ -72,7 +79,7 @@ tags: Hexo
 `hexo deploy -g`
 `hexo server -g`
 
-### 模板
+#### 模板
 `hexo new "postname"` #新建文章
 `hexo new page "pagename"` #新建页面
 
