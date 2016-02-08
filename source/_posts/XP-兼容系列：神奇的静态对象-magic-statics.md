@@ -1,6 +1,6 @@
 title: XP 兼容系列：神奇的静态对象 (magic statics)
 date: 2016-01-13 08:25:01
-tags: Windows
+tags: [Windows,XP 兼容系列]
 ---
 
 ## 神奇的静态对象 (magic statics)
@@ -159,7 +159,7 @@ LdrpInitializeTls(VOID)
 }
 ```
 
-到了这步，我们以为可以很容易的解决问题，既然需要Tls目录，那我们给它一个不久行了？
+到了这步，我们以为可以很容易的解决问题，既然需要Tls目录，那我们给它一个不就行了？
 所以我们给测试代码添加了一个Tls目录..
 ```
 #pragma comment(linker, "/INCLUDE:__tls_used")
