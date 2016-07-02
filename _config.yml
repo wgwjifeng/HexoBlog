@@ -74,7 +74,7 @@ pagination_dir: page
 feed:
   type: atom
   path: atom.xml
-
+  
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
@@ -86,4 +86,3 @@ deploy:
   type: git
   repo: git@github.com:MeeSong/meesong.github.io.git
   branch: master
-  
