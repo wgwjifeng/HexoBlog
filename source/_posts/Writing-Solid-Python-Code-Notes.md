@@ -758,5 +758,16 @@ Counter 类是自 Python2.7 起增加的，属于字典的子类，是一个容�
 另外，还有更先进好用的 docopt，不过暂时还没加入标准库。详见 [docopt](http://docopt.org/)
 
 ## 建议 42：使用 pandas 处理大型 CSV 文件
+CSV(Comma Separated Values) 作为一种逗号分隔符型值的纯文本格式文件，在实际应用中经常用到，如数据库的导入导出、数据分析中记录的存储等。
+
+CSV 处理相关 API：
+1. 'reader(csvfile[, dialect='excel'][, fmtparam])'，主要用于 CSV 文件的读取，返回一个 reader 对象用于在 CSV 文件内容上进行行迭代
+2. 'csv.writer(csvfile, dialect='excel', **fmtparams)'，用于写入 CSV 文件。
+3. 'csv.DictReader(csvfile, fieldnames=None, restkey=None, restval=None, dialect='excel', *args, **kwds)'，将读入的信息映射到一个字典中去
+4. 'csv.DictWrite(csvfile, fieldnames, restval='', extrasaction='raise', dialect='excel', *args, **kwds)'，用于支持字典的写入。
+
+但是在处理大型 CSV 文件，上面API会抛出 MemoryError 异常。
+
+
 
 ...
