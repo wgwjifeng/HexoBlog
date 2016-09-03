@@ -74,11 +74,25 @@ pagination_dir: page
 feed:
   type: atom
   path: atom.xml
-  
+
+# duoshuo
+#duoshuo_shortname: "meesong"
+
+# disuqs
+disqus_shortname: "meesong"
+
+# Google Analytics
+google_analytics: "UA-80255644-1"
+
+# Local Search
+search:
+  path: search.xml
+  field: post
+
 # Extensions
 ## Plugins: http://hexo.io/plugins/
 ## Themes: http://hexo.io/themes/
-theme: Paper-White
+theme: next
 
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
@@ -86,3 +100,7 @@ deploy:
   type: git
   repo: git@github.com:MeeSong/meesong.github.io.git
   branch: master
+
+# Sitemap
+sitemap:
+  path: sitemap.xml

@@ -1,5 +1,5 @@
 ---
-title: <Writing Solid Python Code> Notes
+title: 《Writing Solid Python Code》 Notes
 date: 2016-08-02 09:44:56
 tags: [Python]
 ---
