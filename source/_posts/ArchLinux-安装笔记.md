@@ -1,4 +1,4 @@
-﻿---
+---
 title: 'ArchLinux 安装笔记'
 date: 2016-07-17 16:01:18
 tags: [Linux]
